@@ -18,6 +18,8 @@ app.get('/', async (req, res) => {
 
     try {
         await movie.save();
+        // print to page
+        res.send("Inserted Data")
     } catch(err){
         console.log(err)
     }

@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import React , {component } from "react";
+import   {render } from "react-dom";
 
 function App() {
   return (
