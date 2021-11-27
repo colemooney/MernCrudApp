@@ -18,9 +18,9 @@ function App() {
       autoComplete="off"
     >
       <h1> Mern Crud</h1>
-      <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-      <TextField id="filled-basic" label="Filled" variant="filled" />
-      <TextField id="standard-basic" label="Standard" variant="standard" />
+      <TextField id="filled-basic" label="Movie Name" variant="filled" />
+      <TextField id="filled-basic" label="Year Released" variant="filled" />
+      <TextField id="filled-basic" label="Director Name" variant="filled" />
     </Box>
     </div>
   );
