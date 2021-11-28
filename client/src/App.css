@@ -1,5 +1,14 @@
 .App {
   text-align: center;
+  size: 20px;
+  
+}
+Div {
+  text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.Box {
+  text-align: center;
 }
