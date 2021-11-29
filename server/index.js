@@ -1,20 +1,27 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
+const cors = require('cors');
 
 //Movie DB Connection
 const MovieModel = require("./models/Movie");
 
 app.use(express.json());
+app.use(cors());
 
 mongoose.connect("mongodb+srv://admin:admin@clusterreactapp.irmx5.mongodb.net/movies?retryWrites=true&w=majority", {
     //Mongodb Connect
     useNewUrlParser: true,
 });
 
-app.get('/', async (req, res) => {
+app.post('/insert', async (req, res) => {
+    const movieName = req.body.movieName;
+    const yearMade = req.body.yearMade;
+    const directorName = req.body.directorName;
+    const rating = req.body.rating;
+
     //Save life of pi
-    const movie = new MovieModel({movieName: "Life of Pi", yearMade: 2015, directorName: "M. Knight"});
+    const movie = new MovieModel({movieName: movieName, yearMade: yearMade, directorName: directorName, rating: rating});
 
     try {
         await movie.save();
