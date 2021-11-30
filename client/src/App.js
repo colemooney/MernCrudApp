@@ -1,6 +1,6 @@
 
 import './App.css';
-import React , {component } from "react";
+import React , {component, useEffect } from "react";
 import { useState } from "react";
 import { TextField } from '@mui/material'
 import Box from '@mui/material/Box';
@@ -30,6 +30,12 @@ function App() {
   const [movieName, setMovieName] = useState("");
   const [directorName, setDirectorName] = useState("");
   const [yearMade, setYearMade] = useState(0);
+
+  useEffect(()=> {
+    Axios.get('http://localhost:3001/read').then((response)=> {
+      console.log(response);
+    });
+  }, []);
 
   const addToList = () => {
     Axios.post("http://localhost:3001/insert", {
@@ -99,8 +105,8 @@ function App() {
       {rating !== null && (
         <Box sx={{ ml: 2 }}>{labels[hover !== -1 ? hover : rating]}</Box>
       )}
-      <button onClick={addToList}> Add To List</button>
     </Box>
+      <button onClick={addToList}> Add To List</button>
     </div>
   );
 }

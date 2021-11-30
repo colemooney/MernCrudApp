@@ -14,6 +14,7 @@ mongoose.connect("mongodb+srv://admin:admin@clusterreactapp.irmx5.mongodb.net/mo
     useNewUrlParser: true,
 });
 
+// Creating page
 app.post('/insert', async (req, res) => {
     const movieName = req.body.movieName;
     const yearMade = req.body.yearMade;
@@ -30,7 +31,19 @@ app.post('/insert', async (req, res) => {
     } catch(err){
         console.log(err)
     }
-})
+});
+// Reading page
+app.get('/read', async (req, res) => {
+    MovieModel.find({}, (err, result) => {
+        if (err) {
+            res.send(err);
+            
+        }else {
+            res.send(result);
+        }
+        
+    });
+});
 
 app.listen(3001, ()=> {
     //Server check
