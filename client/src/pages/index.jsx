@@ -53,16 +53,23 @@ const MainPage = () =>  {
 
   return (
     <div className="App">
-      
       <Box
       component="form"
       sx={{
         '& .MuiTextField-root': { m: 1, width: '25ch' },
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
       }}
       noValidate
       autoComplete="off"
     >
-      <div className = "fill">
+      
+        <h1> Add a movie!</h1>
+        <div>
+      <img src="https://static.thenounproject.com/png/4280922-200.png" alt="MovieLogo"/>
+      </div>
         <TextField
           required
           id="outlined-basic"
@@ -91,9 +98,15 @@ const MainPage = () =>  {
             setDirectorName(event.target.value);
             }}
         />
-      </div>
-      <Typography class= "fill" component="legend">Controlled</Typography>
+      
+      
       <Rating
+      sx={{
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center',
+      }}
+        
         name="hover-feedback"
         size="large"
         rating={rating}
@@ -107,12 +120,12 @@ const MainPage = () =>  {
         emptyIcon={<StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />}
       />
       {rating !== null && (
-        <Box sx={{ ml: 2 }}>{labels[hover !== -1 ? hover : rating]}</Box>
+        <Box className= "stars" sx={{ ml: 2 }}>{labels[hover !== -1 ? hover : rating]}</Box>
       )}
-    </Box>
     <div class= "fill">
       <button onClick={addToList}> Add To List</button>
       </div>
+    </Box>
       
     </div>
   );

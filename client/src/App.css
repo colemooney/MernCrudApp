@@ -1,8 +1,8 @@
-.App {
+/* .App {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 90vh;
 }
 .fill {
   text-align: center;
@@ -11,9 +11,19 @@
   align-items: center;
   align-content: center;
   justify-content: center;
+  margin: 15px;
 }
 .Box {
   
   display: flex;
   align-content: center;
+} */
+
+/* 
+.button {
+  margin: 15px;
+} */
+
+.img {
+  width: 200px;
 }
