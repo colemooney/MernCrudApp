@@ -4,7 +4,8 @@ import { useState } from "react";
 import { TextField } from '@mui/material'
 import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
-import Typography from '@mui/material/Typography';
+import { Link } from "react-router-dom";
+
 import StarIcon from '@mui/icons-material/Star';
 
 import Axios from 'axios';
@@ -122,8 +123,11 @@ const MainPage = () =>  {
       {rating !== null && (
         <Box className= "stars" sx={{ ml: 2 }}>{labels[hover !== -1 ? hover : rating]}</Box>
       )}
-    <div class= "fill">
+    <div className= "fill">
+      <Link to="/list">
       <button onClick={addToList}> Add To List</button>
+      </Link>
+      
       </div>
     </Box>
       

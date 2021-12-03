@@ -3,10 +3,10 @@ import './App.css';
 import React from "react";
 
 
-import { BrowserRouter as Router, Route, Routes, Switch, Link, Redirect} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
 import MainPage from "./pages/index.jsx";
-
+import ListPage from "./pages/list.jsx";
 function App() {
   
 
@@ -14,6 +14,7 @@ function App() {
    <Router>
      <Routes>
      <Route path="/" element = {<MainPage />}></Route>
+     <Route path="/list" element = {<ListPage />}></Route>
      </Routes>
    </Router>
   );
