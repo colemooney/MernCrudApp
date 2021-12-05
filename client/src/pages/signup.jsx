@@ -12,7 +12,8 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-
+import { useState } from "react";
+import Axios from 'axios';
 
 
 const theme = createTheme();
@@ -26,6 +27,19 @@ export default function SignUpPage() {
       email: data.get('email'),
       password: data.get('password'),
     });
+  };
+
+  const [userName, setUserName] = useState("");
+  const [password, setPassword] = useState("");
+  
+
+  const [userList, setUserList] = useState([]);
+
+  const addToUserList = () => {
+    Axios.post("http://localhost:3001/signup", {
+      userName: userName,
+      password: password,
+  });
   };
 
   return (
@@ -59,11 +73,14 @@ export default function SignUpPage() {
               margin="normal"
               required
               fullWidth
-              id="email"
-              label="Email Address"
-              name="email"
-              autoComplete="email"
+              id="userName"
+              label="User Name"
+              name="userName"
+              autoComplete="userName"
               autoFocus
+              onChange={(event) => {
+                setUserName(event.target.value);
+                }}
             />
             <TextField
               margin="normal"
@@ -74,19 +91,25 @@ export default function SignUpPage() {
               type="password"
               id="password"
               autoComplete="current-password"
+              onChange={(event) => {
+                setPassword(event.target.value);
+                }}
             />
             <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
             />
+            <Link to="/">
             <Button
               type="submit"
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
+              onClick={addToUserList}
             >
               Sign Up
             </Button>
+            </Link>
             <Grid container>
               <Grid item xs>
                 <Link href="#" variant="body2">
