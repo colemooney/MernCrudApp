@@ -99,7 +99,7 @@ export default function SignUpPage() {
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
             />
-            <Link to="/">
+            <Link to="/index">
             <Button
               type="submit"
               fullWidth
