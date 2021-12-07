@@ -19,33 +19,32 @@ import { useNavigate } from 'react-router-dom';
 
 const theme = createTheme();
 
+
 export default function SignUpPage() {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    // eslint-disable-next-line no-console
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-    });
-  };
-
-  const [userName, setUserName] = useState("");
-  const [password, setPassword] = useState("");
-  
-
-  const [userList, setUserList] = useState([]);
-
-
-  const navigate = useNavigate();
-
-  const addToUserList = () => {
-    Axios.post("http://localhost:3001/signup", {
-      userName: userName,
-      password: password,
-  });
-  navigate('/');
-  };
+    
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const data = new FormData(event.currentTarget);
+        // eslint-disable-next-line no-console
+        console.log({
+          userName: data.get('userName'),
+          password: data.get('password'),
+        });
+      };
+    
+      const [userName, setUserName] = useState("");
+      const [password, setPassword] = useState("");
+      
+    
+      const [userList, setUserList] = useState([]);
+    
+      const addToUserList = () => {
+        Axios.post("http://localhost:3001/signup", {
+          userName: userName,
+          password: password,
+      }).then((res) => console.log(res + "=============="));
+      };
+    
 
   return (
     <ThemeProvider theme={theme}>
@@ -104,7 +103,7 @@ export default function SignUpPage() {
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
             />
-            <Link to="/" >
+            
             <Button
               role="link"
               type="submit"
@@ -115,7 +114,7 @@ export default function SignUpPage() {
             >
               Sign Up
             </Button>
-            </Link>
+            
             <Grid container>
               <Grid item xs>
                 <Link href="#" variant="body2">
