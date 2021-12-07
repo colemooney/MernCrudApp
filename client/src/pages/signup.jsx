@@ -14,6 +14,7 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useState } from "react";
 import Axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 
 const theme = createTheme();
@@ -35,11 +36,15 @@ export default function SignUpPage() {
 
   const [userList, setUserList] = useState([]);
 
+
+  const navigate = useNavigate();
+
   const addToUserList = () => {
     Axios.post("http://localhost:3001/signup", {
       userName: userName,
       password: password,
   });
+  navigate('/');
   };
 
   return (
@@ -99,8 +104,9 @@ export default function SignUpPage() {
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
             />
-            <Link to="/index">
+            <Link to="/" >
             <Button
+              role="link"
               type="submit"
               fullWidth
               variant="contained"
