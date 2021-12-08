@@ -20,9 +20,9 @@ ReactDOM.render(
       <AppBar />
      <Routes>
      <Route path="/" element = {<MainPage />}></Route>
-     <Route path="/list" element = {<ListPage />}></Route>
-     <Route path="/login" element = {<LogInPage />}></Route>
-     <Route path="/signup" element = {<SignUpPage />}></Route>
+     <Route path="/MyCrudApp/list" element = {<ListPage />}></Route>
+     <Route path="/MyCrudApp/login" element = {<LogInPage />}></Route>
+     <Route path="/MyCrudApp/signup" element = {<SignUpPage />}></Route>
      </Routes>
    </Router>
     
