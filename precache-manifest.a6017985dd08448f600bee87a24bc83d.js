@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9d528d33a887283299e18d49852ccf3c",
+    "revision": "a7924fc0c53395aa1c6b0282de94311e",
     "url": "/MernCrudApp/index.html"
   },
   {
-    "revision": "85fb9fdbb3fb0110766b",
+    "revision": "e8d738906caa2e7aaead",
     "url": "/MernCrudApp/static/css/main.db0b737a.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MernCrudApp/static/js/2.229af79f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "85fb9fdbb3fb0110766b",
-    "url": "/MernCrudApp/static/js/main.f5a59018.chunk.js"
+    "revision": "e8d738906caa2e7aaead",
+    "url": "/MernCrudApp/static/js/main.6e62d490.chunk.js"
   },
   {
     "revision": "2a6666b2d9e46b1aa78f",
