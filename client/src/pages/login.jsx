@@ -27,6 +27,7 @@ export default function LogInPage() {
       email: data.get('email'),
       password: data.get('password'),
     });
+    
   };
 
   return (
