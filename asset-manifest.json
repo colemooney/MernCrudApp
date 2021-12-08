@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/MernCrudApp/static/css/main.db0b737a.chunk.css",
-    "main.js": "/MernCrudApp/static/js/main.6e62d490.chunk.js",
-    "main.js.map": "/MernCrudApp/static/js/main.6e62d490.chunk.js.map",
+    "main.css": "/MernCrudApp/static/css/main.2d58f3ca.chunk.css",
+    "main.js": "/MernCrudApp/static/js/main.88dd53d7.chunk.js",
+    "main.js.map": "/MernCrudApp/static/js/main.88dd53d7.chunk.js.map",
     "runtime-main.js": "/MernCrudApp/static/js/runtime-main.8fa4b0ef.js",
     "runtime-main.js.map": "/MernCrudApp/static/js/runtime-main.8fa4b0ef.js.map",
     "static/js/2.229af79f.chunk.js": "/MernCrudApp/static/js/2.229af79f.chunk.js",
     "static/js/2.229af79f.chunk.js.map": "/MernCrudApp/static/js/2.229af79f.chunk.js.map",
     "index.html": "/MernCrudApp/index.html",
-    "precache-manifest.a6017985dd08448f600bee87a24bc83d.js": "/MernCrudApp/precache-manifest.a6017985dd08448f600bee87a24bc83d.js",
+    "precache-manifest.52d876f487581db10bc43ca5bb296c7b.js": "/MernCrudApp/precache-manifest.52d876f487581db10bc43ca5bb296c7b.js",
     "service-worker.js": "/MernCrudApp/service-worker.js",
-    "static/css/main.db0b737a.chunk.css.map": "/MernCrudApp/static/css/main.db0b737a.chunk.css.map",
+    "static/css/main.2d58f3ca.chunk.css.map": "/MernCrudApp/static/css/main.2d58f3ca.chunk.css.map",
     "static/js/2.229af79f.chunk.js.LICENSE.txt": "/MernCrudApp/static/js/2.229af79f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8fa4b0ef.js",
     "static/js/2.229af79f.chunk.js",
-    "static/css/main.db0b737a.chunk.css",
-    "static/js/main.6e62d490.chunk.js"
+    "static/css/main.2d58f3ca.chunk.css",
+    "static/js/main.88dd53d7.chunk.js"
   ]
 }
