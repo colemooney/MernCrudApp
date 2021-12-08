@@ -1,14 +1,11 @@
 {
   "name": "server",
-  "homepage": "https://github.com/colemooney/MernCrudApp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "devStart": "nodemon app.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "devStart": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
