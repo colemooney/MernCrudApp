@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/colemooney/MernCrudApp/static/css/main.db0b737a.chunk.css",
+    "main.js": "/colemooney/MernCrudApp/static/js/main.f5a59018.chunk.js",
+    "main.js.map": "/colemooney/MernCrudApp/static/js/main.f5a59018.chunk.js.map",
+    "runtime-main.js": "/colemooney/MernCrudApp/static/js/runtime-main.15272d2d.js",
+    "runtime-main.js.map": "/colemooney/MernCrudApp/static/js/runtime-main.15272d2d.js.map",
+    "static/js/2.229af79f.chunk.js": "/colemooney/MernCrudApp/static/js/2.229af79f.chunk.js",
+    "static/js/2.229af79f.chunk.js.map": "/colemooney/MernCrudApp/static/js/2.229af79f.chunk.js.map",
+    "index.html": "/colemooney/MernCrudApp/index.html",
+    "precache-manifest.75a873a9debf9347d3c164fd38c6811d.js": "/colemooney/MernCrudApp/precache-manifest.75a873a9debf9347d3c164fd38c6811d.js",
+    "service-worker.js": "/colemooney/MernCrudApp/service-worker.js",
+    "static/css/main.db0b737a.chunk.css.map": "/colemooney/MernCrudApp/static/css/main.db0b737a.chunk.css.map",
+    "static/js/2.229af79f.chunk.js.LICENSE.txt": "/colemooney/MernCrudApp/static/js/2.229af79f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.15272d2d.js",
+    "static/js/2.229af79f.chunk.js",
+    "static/css/main.db0b737a.chunk.css",
+    "static/js/main.f5a59018.chunk.js"
+  ]
+}
